@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'FriendShop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'friendshop',
+        'NAME': 'postgres',
         'USER': 'myusername',
         'PASSWORD': 'mypassword',
         'HOST': 'localhost',
