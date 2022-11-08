@@ -1,24 +1,18 @@
-"""FriendShop URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from api import urls as api_urls
+from api.products import urls as products_urls
+from api.categories import urls as categories_urls
+from api.userCartProducts import urls as userCartProducts_urls
+from api.auth import urls as auth_urls
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(api_urls))
+    # path('api/', include(api_urls)),
+    path('api/products/', include(products_urls)),
+    path('api/categories/', include(categories_urls)),
+    path('api/cart/products/', include(userCartProducts_urls)),
+    path('api/auth/', include(auth_urls))
 ]
