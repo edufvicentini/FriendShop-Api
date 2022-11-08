@@ -1,7 +1,7 @@
 from api.products.model import Products
 from rest_framework import generics
 from api.products.serializer import ProductSerializer
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
 
 ### Products
 class ProductList(generics.ListAPIView):
@@ -9,7 +9,7 @@ class ProductList(generics.ListAPIView):
     serializer_class = ProductSerializer
 
 class ProductCreate(generics.CreateAPIView):
-  permission_classes = (IsAdminUser,)
+  permission_classes = (IsAuthenticated,)
 
   queryset = Products.objects.all(),
   serializer_class = ProductSerializer
