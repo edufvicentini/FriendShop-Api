@@ -4,7 +4,6 @@ from api.products.model import Products
 from django.contrib.auth.models import User
 
 class UserCartProductsSerializer(serializers.ModelSerializer):
-    user_id = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
     product_id = serializers.PrimaryKeyRelatedField(queryset=Products.objects.all())
 
     class Meta: 

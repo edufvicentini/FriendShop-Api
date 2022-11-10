@@ -3,13 +3,12 @@ from rest_framework import generics
 from api.products.serializer import ProductSerializer
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 
-### Products
 class ProductList(generics.ListAPIView):
     queryset = Products.objects.all()
     serializer_class = ProductSerializer
 
 class ProductCreate(generics.CreateAPIView):
-  permission_classes = (IsAuthenticated,)
+  permission_classes = (IsAdminUser,)
 
   queryset = Products.objects.all(),
   serializer_class = ProductSerializer

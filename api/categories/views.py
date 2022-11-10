@@ -3,7 +3,6 @@ from rest_framework import generics
 from api.categories.serializer import CategorySerializer
 from rest_framework.permissions import IsAdminUser
 
-### Categories
 class CategoryList(generics.ListAPIView):
     queryset = Categories.objects.all()
     serializer_class = CategorySerializer
