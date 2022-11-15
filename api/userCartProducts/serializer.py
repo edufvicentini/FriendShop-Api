@@ -32,22 +32,10 @@ class UserCartProductsSerializer(serializers.ModelSerializer):
     class Meta: 
         model = User_Cart_Products
         fields = ['id', 'user_id', 'product','quantity', 'updated_at', 'expires_in']
-        depth = 3
+        depth = 2
 
-    # def create(self, validated_data):
-      
-    #   super(UserCartProductsSerializer, self).create(self, validated_data)
-
-
-    # def create(self, validated_data):
-    #     product_data = validated_data.pop('product')
-    #     self.product = product_data['id']
-    #     return self
-
-        # product = serializers.ReadOnlyField(queryset=Products.objects.all(), many=False)
-    # product = serializers.JSONField()
-    # price = serializers.SlugRelatedField(many=False, slug_field='price', read_only=True)
-    # product =serializers.PrimaryKeyRelatedField(queryset=Products.objects.all(), many=True)
-    # product = serializers.ManyRelatedField(many=True)
-    # user = serializers.PrimaryKeyRelatedField(queryset=Products.objects.all(), many=False)
-    # product = ProductInfoSerializer(many=False)
+class UserCartSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = User_Cart_Products
+        fields = ['id', 'user_id', 'product','quantity', 'updated_at', 'expires_in']
+        depth = 2

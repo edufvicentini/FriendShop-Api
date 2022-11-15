@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated
 class ProductList(generics.ListAPIView):
     queryset = Products.objects.all()
     serializer_class = ProductSerializer
-
+    
 class ProductCreate(generics.CreateAPIView):
   permission_classes = (IsAdminUser,)
 

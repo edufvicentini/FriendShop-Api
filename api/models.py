@@ -7,12 +7,12 @@ class Sells(models.Model):
   status = models.CharField(max_length=200, blank=False)
   created_at = models.DateTimeField(auto_now_add=True, blank=True)
 
-class User_Logs(models.Model):
-  action = models.CharField(max_length=500, blank=False)
-  product_id = models.IntegerField()
-  date = models.DateTimeField(auto_now_add=True, blank=True)
+# class User_Logs(models.Model):
+#   action = models.CharField(max_length=500, blank=False)
+#   product_id = models.IntegerField()
+#   date = models.DateTimeField(auto_now_add=True, blank=True)
 
-class Admin_Logs(models.Model):
-  action = models.CharField(max_length=500, blank=False)
-  product_id = models.IntegerField()
-  date = models.DateTimeField(auto_now_add=True, blank=True)
+# class Admin_Logs(models.Model):
+#   action = models.CharField(max_length=500, blank=False)
+#   product_id = models.IntegerField()
+#   date = models.DateTimeField(auto_now_add=True, blank=True)
