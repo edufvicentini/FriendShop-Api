@@ -7,7 +7,6 @@ from rest_framework.permissions import IsAuthenticated
 class UserCartProductsCreate(generics.CreateAPIView):
     permission_classes = (IsAuthenticated,)
     def post(self, request, *args, **kwargs):
-      
       return self.create(request, *args, **kwargs)
 
     serializer_class = UserCartProductsSerializer

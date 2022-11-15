@@ -5,6 +5,7 @@ from api.products import urls as products_urls
 from api.categories import urls as categories_urls
 from api.userCartProducts import urls as userCartProducts_urls
 from api.auth import urls as auth_urls
+from api.admin_logs import urls as admin_logs_urls
 
 
 urlpatterns = [
@@ -13,5 +14,5 @@ urlpatterns = [
     path('api/categories/', include(categories_urls)),
     path('api/cart/products/', include(userCartProducts_urls)),
     path('api/auth/', include(auth_urls)),
-    path('api/admin/logs',)
+    path('api/admin/logs', include(admin_logs_urls))
 ]
