@@ -33,7 +33,6 @@ class SellsCreate(generics.CreateAPIView):
         productData = row['product']
         if row['quantity'] > productData['stock']:
           return { 'product': productData['description'], 'is_out_of_stock':True}
-      
       return {'is_out_of_stock':False}
 
     def set_items_status_sold(*args):
