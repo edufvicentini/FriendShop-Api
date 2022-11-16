@@ -18,5 +18,10 @@ class UserCartProductsSerializer(serializers.ModelSerializer):
 class UserCartSerializer(serializers.ModelSerializer):
     class Meta: 
         model = User_Cart_Products
-        fields = ['id', 'user_id', 'product','quantity', 'updated_at', 'expires_in']
+        fields = ['id', 'user_id', 'product','quantity', 'status', 'sell', 'updated_at', 'expires_in']
         depth = 2
+
+class UserCartQuantitySerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = User_Cart_Products
+        fields = ['id', 'quantity']
