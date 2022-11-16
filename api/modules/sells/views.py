@@ -16,6 +16,7 @@ class SellsList(generics.ListAPIView):
 
 class SellsCreate(generics.CreateAPIView):
     permission_classes = (IsAdminUser,)
+    
     def calculate_total(*args):
         cartSerializer = args[1]
         total = 0
