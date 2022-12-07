@@ -1,6 +1,6 @@
 # FriendShop-Api
 
-<a href="https://github.com/edufvicentini/pokedex-react-js/blob/master/LICENSE">
+<a href="https://github.com/edufvicentini/FriendShop-Api/blob/master/LICENSE">
    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Pokédex is released under the MIT license." />
  </a>
 
