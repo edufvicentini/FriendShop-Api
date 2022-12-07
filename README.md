@@ -12,8 +12,8 @@
 
 ### Project Structure
 ```bash
-├── .vscode
-├── api
+├── .vscode                   # Configuration file setting the project ready for debugging in VSCode
+├── api                   # Source
    ├── auth                   # Authentication Module
    ├── logs                   
       ├── admin_logs          # Admin Logs Module
