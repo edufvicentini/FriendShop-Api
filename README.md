@@ -122,6 +122,24 @@ DATABASES = {
 ```
 [Here](https://commandprompt.com/education/how-to-download-and-install-postgresql/) your can find more information about installing PostgreSQL in your computer. If you want to use Docker, follow this [Link](https://imasters.com.br/banco-de-dados/postgresql-docker-executando-uma-instancia-e-o-pgadmin-4-partir-de-containers) instead.
 
+### Running the project
+
+After setting up, open the project folder in your Terminal and execute the following:
+
+```bash
+   # Make any undone database migrations
+   python manage.py makemigrations     
+   
+   # Run migrations into database
+   python manage.py migrate         
+   
+   # Creates the Admin user. Requires a login and password
+   python manage.py createsuperuser
+   
+   # And finally, run the server
+   python manage.py runserver
+```
+
 ## Author
 
 <a href="https://https://www.linkedin.com/in/eduardofvicentini/">
