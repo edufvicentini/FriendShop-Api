@@ -8,6 +8,42 @@
 
 <p>This is an e-commerce API REST that offers functionalities for both admin and customer users.</p>
 
+## Structure
+
+### Project Structure
+```bash
+├── .vscode
+├── api
+   ├── auth                   # Authentication Module
+   ├── logs                   
+      ├── admin_logs          # Admin Logs Module
+      └── user_logs           # User Logs Module
+   ├── migrations         # Database migrations
+   ├── modules            # Main Operational modules
+      ├── categories          # Category Module
+      ├── products            # Products Module
+      ├── sells               # Sells Module
+      └── userCartProducts    # Cart Module
+├── .gitignore
+├── manage.py             # Main Project file
+└── FriendShop
+    ├── __init__.py
+    ├── asgi.py
+    ├── settings.py           # Configuration file
+    ├── urls.py               # Available URLs in project
+    └── wsgi.py
+```
+
+### Module Structure
+```bash
+Module
+├── model.py         # Database model file. Defines the modeling of the entity.
+├── serializer.py    # Configuration of serializers. They are responsible for converting django objects to JSON.
+├── urls.py          # Endpoints configuration.
+├── views.py         # File containing the module useCases and business rules.
+└── utils.py         # Optional file with module utilities.
+```
+
 ## ⚙️ Routes List
 <a href="https://github.com/edufvicentini/pokedex-react-js/blob/master/LICENSE">
    <img src="https://img.shields.io/badge/GET-INSOMNIA%20FILE-purple" />
@@ -127,6 +163,9 @@ DATABASES = {
 After setting up, open the project folder in your Terminal and execute the following:
 
 ```bash
+   # Access the folder in terminal
+   cd FriendShop-Api
+   
    # Make any undone database migrations
    python manage.py makemigrations     
    
@@ -139,6 +178,8 @@ After setting up, open the project folder in your Terminal and execute the follo
    # And finally, run the server
    python manage.py runserver
 ```
+
+## 
 
 ## Author
 
