@@ -62,6 +62,65 @@
 
 
 ---
+## 🚀 How to execute the project
+
+### Prerequisites
+Before starting, you will need to have the following tools installed on your machine:
+- [Git](https://git-scm.com)
+- [Python v3.8>=](https://www.python.org/)
+- Any SQL Database System like [PostgreSQL](https://www.postgresql.org/) or [Docker](https://www.docker.com/) for running database images. 
+- Also it's nice to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
+
+If you don't have Django installed, run these following lines in your Terminal:
+
+```bash
+pip install django
+pip install django_rest_framework
+```
+
+### Configuring Database
+Having Django installed:
+
+```bash
+# Clone this repository
+git clone git@github.com:edufvicentini/FriendShop-Api.git
+
+# Access the folder in terminal
+cd FriendShop-Api
+
+# Open in your editor
+code .
+```
+
+Inside the project you will have:
+
+```bash
+├── .vscode
+├── api
+├── .gitignore
+├── manage.py
+└── FriendShop
+    ├── __init__.py
+    ├── asgi.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
+
+Open settings.py and find the following lines:
+```bash
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql', # keep this if you are using postgresql
+        'NAME': 'postgres',         # your database name
+        'USER': 'myusername',       # your database user
+        'PASSWORD': 'mypassword',   # your database pasword
+        'HOST': 'localhost',        # your database host
+        'PORT': '8001',             # your database port
+    }
+}
+```
+[Here](https://commandprompt.com/education/how-to-download-and-install-postgresql/) your can find more information about installing PostgreSQL in your computer. If you want to use Docker, follow this [Link](https://imasters.com.br/banco-de-dados/postgresql-docker-executando-uma-instancia-e-o-pgadmin-4-partir-de-containers) instead.
 
 ## Author
 
