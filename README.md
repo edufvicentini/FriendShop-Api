@@ -45,7 +45,7 @@ Module
 ```
 
 ## ⚙️ Routes List
-<a href="https://github.com/edufvicentini/pokedex-react-js/blob/master/LICENSE">
+<a href="https://github.com/edufvicentini/FriendShop-Api/blob/master/assets/Insomnia_Friendshop-api">
    <img src="https://img.shields.io/badge/GET-INSOMNIA%20FILE-purple" />
  </a>
 
