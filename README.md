@@ -179,17 +179,14 @@ After setting up, open the project folder in your Terminal and execute the follo
    python manage.py runserver
 ```
 
-## 
-
 ## Author
 
-<a href="https://https://www.linkedin.com/in/eduardofvicentini/">
+<a href="https://https://www.linkedin.com/in/eduardofvicentini">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/95220802?s=400&u=55c93f56de0ea7dfee88bfe5d75a8f795ef89f4b&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Eduardo Frota Vicentini</b></sub></a> <a href="https://https://www.linkedin.com/in/eduardofvicentini/" title="Rocketseat">🚀</a>
-
+ <sub><b>Eduardo Frota Vicentini</b></sub></a> <a href="https://https://www.linkedin.com/in/eduardofvicentini" title="Eduardo">🚀</a>
 
 Made with ❤️ by Eduardo Frota Vicentini 👋🏽 Contact me!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Eduardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/eduardofvicentini/)](https://www.linkedin.com/in/eduardofvicentini/) 
-[![Gmail Badge](https://img.shields.io/badge/-eduardofvicentini@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:eduardofvicentini@gmail.com)](mailto:tgmarinho@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-eduardofvicentini@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:eduardofvicentini@gmail.com)](mailto:eduardofvicentini@gmail.com)
